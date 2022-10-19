@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="2023-rlcs-predictions.css">
     <head>
         <title>2022-23 RLCS Predictions</title>
-        <link rel="icon" type="x-icon" href="src/RLCSEloIcon.png">
-        <link rel="shortcut icon" type="x-icon" href="src/RLCSEloIcon.png">
+        <link rel="icon" type="x-icon" href="src/RLCS Elo Icon.png">
+        <link rel="shortcut icon" type="x-icon" href="src/RLCS Elo Icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
     </head>
-<body style="background-color: #FFFFFF">
+<body>
 	<header class="page-header vertical-sports" aria-hidden="true">
    		<div class="header-wrapper">
         		<a class="logo" href="https://pyroblocks.github.io/rlcselosite" tabindex="-1">
-            			<img width="131" height="20" alt="RLCS Elo" src="src/RLCSElo.png">
+            			<img width="131" height="20" alt="RLCS Elo" src="src/RLCS Elo.png">
 			</a>
 		</div>
 	</header>
+	<div id="header-spacer"></div>
+	<article role="main">
+		<div class="container">
+			<div id="intro">
+				<div class="timestamp-container">
+					<p class="timestamp">UPDATED Oct. 19, 2022, at 8:08 AM</p>
+				</div>
+				<h1>2022-23 RLCS Predictions</h1>
+				<h2 class="article-subtitle">For the current split and major, updated each week.</h2>
+				<p class="see-also">
+					More RLCS:<a href="https://pyroblocks.github.io/rlcselosite/2022-rlcs-predictions.html">RLCS Elo 21-22</a>
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<nav class="nav">
+				<div class="nav-toggle" id="js-nav-toggle">
+					<input class="toggle-radio" id="toggle-fall" type="radio" name="nav-toggle" checked="">
+					<label class="toggle-label" for="toggle-fall">
+						<span class="toggle-label-text">Fall Split</span>
+					</label>
+					<input class="toggle-radio" id="toggle-matchup-maker" type="radio" name="nav-toggle">
+					<label class="toggle-label" for="toggle-matchup-maker">
+						<span class="toggle-label-text">Matchup Maker</span>
+					</label>
+				</div>
+			</nav>
+			<div class="views">
+				<div class="view js-view" id="standings">
+					<div id="standings-table-wrapper">
+						<table id="standings-table">
+							<thead>
+								<tr aria-hidden="true">
+									<th class="top nosort top-spacer spacer-1"></th>
+									<th class="top nosort top-spacer spacer-2"></th>
+									<th class="top nosort top-spacer spacer-3"></th>
+									<th class="top nosort top-spacer spacer-4"></th>
+									<th class="top nosort top-spacer spacer-5"></th>
+									<th class="top nosort top-spacer spacer-6 desktop"></th>
+									<th class="top bordered bordered-right nosort desktop" colspan="2">average simulated split</th>
+									<th class="top bordered nosort desktop" colspan="4">fall split chances</th>
+									<th class="top bordered nosort mobile-th" colspan="3">fall split chances</th>
+								</tr>
+								<tr class="sep" aria-hidden="true">
+									<th colspan="12"></th>
+								</tr>
+								<tr class="lower">
+									<th class="num elo bold" data-tsorter="numeric" scope="col">
+										<div class="desktop">elo with top qb</div>
+										<div class="mobile">elo rating</div>
+									</th>
+									<th class="num elo desktop elo-change bold" data-tsorter="data-val" scope="col">1-week change</th>
+									<th class="num elo bold desktop" data-tsorter="data-val" scope="col">current qb adj.</th>
+									<th class="logo desktop nosort" aria-hidden="true"></th><th class="team bold" data-tsorter="data-str" scope="col">team</th>
+									<th class="desktop division bold" data-tsorter="data-str" scope="col">division</th><th class="num" data-tsorter="data-val" scope="col">
+										<div class="desktop">record</div>
+										<div class="mobile bold">sim. record</div>
+									</th>
+									<th class="num desktop" data-tsorter="data-val" scope="col">point diff.</th>
+									<th class="pct" data-tsorter="data-val" scope="col">make playoffs</th>
+									<th class="division-chances pct" data-tsorter="data-val" scope="col">win division</th>
+									<th class="pct desktop" data-tsorter="data-val" scope="col">1st-round bye</th>
+									<th class="sorted pct" id="col-win-superbowl" data-tsorter="data-val" scope="col">win super bowl</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr data-team="G2">
+									<td class="num elo" data-cell="elo">1613</td>
+									<td class="num desktop elo elo-change" data-val="+5" data-cell="change">
+										<div class="change up">+5</div>
+									</td>
+									<td class="logo desktop" aria-hidden="true">
+										<img src="https://liquipedia.net/commons/images/thumb/d/d3/G2_Esports_2019_lightmode.png/600px-G2_Esports_2019_lightmode.png&amp;w=56&amp;h=56" alt="G2-logo" width="28" height="28" pinger-seen="true">
+									</td>
+									<td class="team" data-str="G2 Esports" scope="row"><span class="full">G2 Esports</span><span class="record desktop" data-team="G2">9</span></td>
+									<td class="division desktop" data-str="North America 0.46 0.31 90.26">North America</td>
+									<td class="num div" data-cell="record" data-val="10000">27</td>
+									<td class="num desktop" data-val="2nd" data-cell="pointdiff">2nd</td>	
+									<td class="pct div" data-team="G2" data-cat="make_playoffs" data-val="0.68522" style="background-color:rgb(80, 178, 226);color:#000;">69%</td>
+									<td class="pct division-chances" data-team="G2" data-cat="win_division" data-val="0.53702" style="background-color:rgb(118, 195, 232);color:#000;">54%</td>
+									<td class="pct desktop" data-team="G2" data-cat="first_round_bye" data-val="0.01576" style="background-color:rgb(251, 253, 254);color:#000;">2%</td>
+									<td class="pct superbowl" data-team="G2" data-cat="win_superbowl" data-val="0.0365" style="background-color:rgb(246, 251, 253);color:#000;">4%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="footer">
+				<div class="notes">
+					<p>
+						<span class="readin">How this works:</span> This forecast is based on 10,000 simulations of the split in each region and updates after every weekend of tournaments. My traditional model uses Elo ratings (a measure of strength based on head-to-head results and quality of opponent) to calculate teams’ chances of winning regionals and advancing to the major. <a href="https://pyroblocks.github.io/rlcselosite/how-our-rlcs-predictions-work.html">Full methodology »</a>
+					</p>
+					<p>
+						<a href="https://pyroblocks.github.io/rlcselosite/downloads">Download this data</a>.
+					</p>
+				</div>
+				<div class="additional-credits">
+					<p>Design and development taken from <a href="https://projects.fivethirtyeight.com">FivethirtyEight</a>. Statistical model by <a href="https://linktr.ee/pyroblocks">Pyroblocks</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
 </body>
